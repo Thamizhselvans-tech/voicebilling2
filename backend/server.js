@@ -18,7 +18,7 @@ app.use('/invoices', express.static(path.join(__dirname, 'invoices')));
 app.use('/uploads',  express.static(path.join(__dirname, 'uploads')));
 
 // Routes
-app.use('/api/auth',      require('./routes/auth'));
+app.use('/api/auth',      require('./routes/authRoutes'));
 app.use('/api/products',  require('./routes/products'));
 app.use('/api/voice',     require('./routes/voice'));
 app.use('/api/bill',      require('./routes/bill'));
